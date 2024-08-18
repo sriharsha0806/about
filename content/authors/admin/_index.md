@@ -166,4 +166,4 @@ awards:
       In this course, Azure AI service used specifically to build text2sql agent for interacting with a database. 
 ---
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+I am currently Senior GenAI Scientist at Fractal where I am building GenAI applications especially for Search, Text2SQL.
