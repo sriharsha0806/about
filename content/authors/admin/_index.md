@@ -7,8 +7,8 @@ first_name: Sriharsha
 last_name: Annamaneni
 
 # Status emoji
-status:
-  icon: ☕️
+#status:
+#  icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
