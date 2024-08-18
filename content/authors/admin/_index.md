@@ -1,13 +1,10 @@
 ---
 # Display name
-title: 吳健雄
-
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+title: Sriharsha
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Sriharsha 
+last_name: Annamaneni
 
 # Status emoji
 status:
@@ -17,84 +14,96 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: Senior Gen AI Datascientist 
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: Fractal
+    url: https://fractal.ai/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'sriharsha0806@gmail.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: https://twitter.com/harsha0806
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/sriharsha0806
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.linkedin.com/in/annamaneni-sriharsha-13b77262/
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: MS Electrical Engineering
+    institution: Florida Institute of Technology
+    date_start: 2015-08-01
+    date_end: 2016-12-31
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+      GPA: 3.7/4.0
 
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      - Speech processing, Artificial Intelligence, Pattern Recognition, Signal Processing, Stochastic probability, Optimization
+  - area: BSc Electronics and Communications
+    institution: Manipal Institute of Technology
+    date_start: 2010-06-01
+    date_end: 2014-06-15
     summary: |
       GPA: 3.4/4.0
       
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+      - Signal Processing, Advanced Signal Processing, Artificial Intelligence, Data Structures and Algorithms
+  - position: Senior Gen AI Data Scientist
+    company_name: Fractal 
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2024-05-01
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Led a cross-functional team to build an MVP chatbot for text2SQL applications using Langchain and Langraph. Improved system accuracy by conducting root cause analysis and redesigning schema by 27%
+      through schema redesign, significantly enhancing SQL query generation and overall performance.
+  - position: Senior AI Engineer
+    company_name: Bosch
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2021-05-01
+    date_end: 2024-04-30
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
+      - Launched ’Ditto,’ a project aimed at detecting similar software bug defects through semantic text similarity
+      techniques. Enhanced the pipeline with a RAG (Retrieval-Augmented Generation) based system to optimize
+      efficiency using Qdrant.
+      - Spearheaded the creation of an Interior Monitoring System for enhancing road safety, passenger comfort, and
+      driver focus. Implemented advanced features such as Seat Belt Detection and Drowsiness Detection using
+      Evidential Deep Learning. Leveraged Explainable AI algorithm GradCam++ to minimize False Positives
+      and True Negatives, leading to a significant reduction in errors.
+      - Developed a smart system leveraging NLP and the MPNet sentence encoder model to associate bugs with
+      test cases, achieving a 75-fold increase in efficiency and 95% test coverage.
+- position: Computer Vision Engineer
+    company_name: Aimlytics
+    company_url: ''
+    company_logo: ''
+    date_start: 2020-10-01
+    date_end: 2021-05-30
+    summary: |
+      Responsibilities include:
+      - Engineered an automated speech dubbing solution incorporating ASR, Speaker Diarization, and TTS capabilities,
+      leading to a more accurate and natural-sounding output.
+      - Customized a TTS synthesis model using the Indic TTS dataset, effectively capturing regional accents and
+      dialects.
+- position: Research Engineer
+    company_name: Sirena
+    company_url: ''
+    company_logo: ''
+    date_start: 2019-10-01
+    date_end: 2020-06-30
+    summary: |
+      Responsibilities include:
+      - Crafted an offline wake-up word detection system utilizing GRU Networks for real-time responsiveness,
+      significantly reducing latency by 13%.
+      - Formulated a Siamese Deep Neural Network for facial recognition, achieving a 99.8% accuracy rate, contributing
+      to enhanced security measures.    
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
@@ -104,10 +113,10 @@ skills:
         description: ''
         percent: 80
         icon: devicon/python
-      - name: RStudio
+      - name: SQL
         description: ''
         percent: 100
-        icon: devicon/rstudio
+        icon: devicon/sqldeveloper
       - name: PyTorch
         description: ''
         percent: 40
@@ -120,22 +129,19 @@ skills:
         description: ''
         percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Books
         description: ''
         percent: 100
         icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+      
 
 languages:
   - name: English
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+  - name: Telugu
+    percent: 100
+  - name: Hindi
+    percent: 100
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -149,24 +155,15 @@ awards:
     icon: coursera
     summary: |
       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
+  
+  - title: 'Build your own database agent'
     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
+    certificate_url: https://learn.deeplearning.ai/accomplishments/ea32cd06-f594-418f-931d-808c43a17bb3?usp=sharing
+    date: '2024-07-21'
+    awarder: deeplearning.ai
+    icon: deeplearning
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      In this course, Azure AI service used specifically to build text2sql agent for interacting with a database. 
 ---
 
 I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
