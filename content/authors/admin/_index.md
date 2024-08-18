@@ -42,7 +42,7 @@ education:
     date_start: 2010-06-01
     date_end: 2014-06-15
     summary: |
-      GPA: 3.4/4.0
+      GPA: 7.0/10
       
       Courses included:
       - Signal Processing, Advanced Signal Processing, Artificial Intelligence, Data Structures and Algorithms
@@ -102,7 +102,10 @@ skills:
         icon: person-simple-walk
       - name: Books
         percent: 100
-        icon: cat
+        icon: book
+      - name: Badminton
+        percent: 60
+        icon: badminton
 
 languages:
   - name: English
