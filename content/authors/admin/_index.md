@@ -37,7 +37,7 @@ education:
 
       Courses included:
       - Speech processing, Artificial Intelligence, Pattern Recognition, Signal Processing, Stochastic probability, Optimization
-  - area: BSc Electronics and Communications
+  - area: BE Electronics and Communications Engineering
     institution: Manipal Institute of Technology
     date_start: 2010-06-01
     date_end: 2014-06-15
@@ -47,7 +47,7 @@ education:
       Courses included:
       - Signal Processing, Advanced Signal Processing, Artificial Intelligence, Data Structures and Algorithms
 
-positions:
+work:
   - position: Senior Gen AI Data Scientist
     company_name: Fractal 
     date_start: 2024-05-01
