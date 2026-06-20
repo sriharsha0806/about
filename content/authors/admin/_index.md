@@ -10,11 +10,11 @@ status:
   
 superuser: true
 
-role: Senior Gen AI Data Scientist 
+role: Senior Applied AI/ML
 
 organizations:
-  - name: Fractal
-    url: https://fractal.ai/
+  - name: JPMC
+    url: https://www.jpmorganchase.com/
 
 profiles:
   - icon: at-symbol
@@ -48,10 +48,17 @@ education:
       - Signal Processing, Advanced Signal Processing, Artificial Intelligence, Data Structures and Algorithms
 
 work:
-  - position: Senior Gen AI Data Scientist
-    company_name: Fractal 
-    date_start: 2024-05-01
+  - position: Senior Applied AI/ML
+    company_name: JPMC
+    date_start: 2026-07-01
     date_end: ''
+    summary: |
+      Responsibilities include:
+      - Working on evaluation alignment and long-horizon agent tasks for applied AI/ML systems.
+  - position: Senior Gen AI Data Scientist
+    company_name: Fractal
+    date_start: 2024-05-01
+    date_end: 2026-06-17
     summary: |
       Responsibilities include:
       - Led a cross-functional team to build an MVP chatbot for text2SQL applications using Langchain and Langraph. Improved system accuracy by conducting root cause analysis and redesigning schema by 27%, significantly enhancing SQL query generation and overall performance.
@@ -134,4 +141,4 @@ awards:
       In this course, Azure AI service used specifically to build text2sql agent for interacting with a database.
 ---
 
-I am currently Senior GenAI Scientist at Fractal where I am building GenAI applications especially for Search, Text2SQL.
+I am currently Senior Applied AI/ML at JPMC, where I work on evaluation alignment and agents for long-horizon tasks.
