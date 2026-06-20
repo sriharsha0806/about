@@ -6,7 +6,7 @@ last_name: Annamaneni
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: JPMC
   
 superuser: true
 
