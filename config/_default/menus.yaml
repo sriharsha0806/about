@@ -7,9 +7,12 @@ main:
   - name: Home
     url: /
     weight: 10
+  - name: About
+    url: about-me/
+    weight: 20
+  - name: Books
+    url: books/
+    weight: 30
   - name: Blog
     url: blog/
-    weight: 20
-  - name: Uses
-    url: uses/
-    weight: 30
+    weight: 40
