@@ -1,6 +1,8 @@
 .blox-resume-biography {
-  background: #f7f8fa;
-  padding: 2.25rem 0 2.75rem !important;
+  background:
+    linear-gradient(180deg, rgba(248, 250, 252, 0.18) 0%, #f7f8fa 72%),
+    #f7f8fa;
+  padding: 1.4rem 0 2.6rem !important;
 }
 
 .site-super-tabs {
@@ -115,7 +117,7 @@
 }
 
 .blox-resume-biography #profile {
-  padding: 1.25rem 10px 0 !important;
+  padding: 1rem 10px 0 !important;
 }
 
 .blox-resume-biography #profile .text-3xl {
@@ -131,11 +133,26 @@
   color: #111827 !important;
   background: #ffffff !important;
   border-color: #d1d5db !important;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 .blox-resume-biography #profile a[href$="resume.pdf"]:hover {
   color: #111827 !important;
   background: #f3f4f6 !important;
+}
+
+.resume-biography .text-3xl {
+  font-size: clamp(2rem, 4vw, 3.4rem) !important;
+  line-height: 1.02 !important;
+}
+
+.resume-biography h3 {
+  font-size: 1.05rem !important;
+}
+
+.blox-resume-biography .bio-text p {
+  font-size: clamp(1rem, 1.55vw, 1.18rem);
+  line-height: 1.75;
 }
 
 .blox-resume-biography .avatar {
@@ -158,4 +175,257 @@
   box-shadow:
     0 8px 18px rgba(15, 23, 42, 0.18),
     0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+
+#section-current-focus,
+#section-selected-systems,
+#section-research-reviewing {
+  padding: 3.5rem 1.5rem !important;
+}
+
+#section-current-focus {
+  background: #ffffff;
+}
+
+#section-selected-systems {
+  background: #f3f6fa;
+}
+
+#section-research-reviewing {
+  background: #ffffff;
+}
+
+.dark #section-current-focus,
+.dark #section-research-reviewing {
+  background: #0f172a;
+}
+
+.dark #section-selected-systems,
+.dark .blox-resume-experience {
+  background: #111827;
+}
+
+.home-editorial,
+.systems-showcase,
+.research-strip {
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  color: #111827;
+}
+
+.dark .home-editorial,
+.dark .systems-showcase,
+.dark .research-strip {
+  color: #f9fafb;
+}
+
+.home-editorial__intro,
+.systems-showcase__header {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.6rem;
+}
+
+.home-editorial h2,
+.systems-showcase h2,
+.research-strip h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(2rem, 4.8vw, 4rem);
+  font-weight: 850;
+  line-height: 0.98;
+}
+
+.dark .home-editorial h2,
+.dark .systems-showcase h2,
+.dark .research-strip h2,
+.dark .focus-rail h3,
+.dark .system-list h3,
+.dark .research-strip h3 {
+  color: #f9fafb;
+}
+
+.home-editorial__intro p,
+.systems-showcase__header p,
+.research-strip p {
+  margin: 0;
+  color: #475569;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.dark .home-editorial__intro p,
+.dark .systems-showcase__header p,
+.dark .research-strip p,
+.dark .focus-rail p,
+.dark .system-list p {
+  color: #cbd5e1;
+}
+
+.focus-rail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid #dbe4ef;
+  border-radius: 16px;
+  background: #dbe4ef;
+}
+
+.dark .focus-rail {
+  border-color: #334155;
+  background: #334155;
+}
+
+.focus-rail div {
+  min-height: 240px;
+  padding: 1.35rem;
+  background: #f8fafc;
+}
+
+.dark .focus-rail div,
+.dark .system-list article {
+  background: #1f2937;
+}
+
+.focus-rail span {
+  display: block;
+  margin-bottom: 3rem;
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.dark .focus-rail span {
+  color: #93c5fd;
+}
+
+.focus-rail h3,
+.system-list h3,
+.research-strip h3 {
+  margin: 0 0 0.65rem;
+  color: #111827;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.focus-rail p,
+.system-list p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.system-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.system-list article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(130px, auto);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #d8e2ee;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.dark .system-list article {
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.system-list strong {
+  justify-self: end;
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.dark .system-list strong {
+  color: #ffffff;
+}
+
+.research-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.research-links {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  padding-top: 0.5rem;
+}
+
+.research-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  color: #0f172a;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.dark .research-links a {
+  border-color: #475569;
+  color: #f9fafb;
+}
+
+.research-links a:hover {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.blox-resume-experience {
+  background: #f8fafc;
+}
+
+.blox-resume-experience h3.mb-6 {
+  font-size: clamp(2rem, 4vw, 3.2rem) !important;
+}
+
+.blox-resume-experience ol {
+  border-color: #cbd5e1 !important;
+}
+
+@media (max-width: 820px) {
+  .home-editorial__intro,
+  .systems-showcase__header,
+  .research-strip,
+  .system-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-rail div {
+    min-height: auto;
+  }
+
+  .focus-rail span {
+    margin-bottom: 1.2rem;
+  }
+
+  .system-list strong {
+    justify-self: start;
+  }
 }

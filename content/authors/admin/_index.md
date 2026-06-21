@@ -50,7 +50,7 @@ education:
 work:
   - position: Senior Applied AI/ML
     company_name: JPMC
-    date_start: 2026-07-01
+    date_start: 2026-06-17
     date_end: ''
     summary: |
       Responsibilities include:
@@ -58,10 +58,13 @@ work:
   - position: Senior Gen AI Data Scientist
     company_name: Fractal
     date_start: 2024-05-01
-    date_end: 2026-06-17
+    date_end: 2026-06-15
     summary: |
       Responsibilities include:
-      - Led a cross-functional team to build an MVP chatbot for text2SQL applications using Langchain and Langraph. Improved system accuracy by conducting root cause analysis and redesigning schema by 27%, significantly enhancing SQL query generation and overall performance.
+      - Built and scaled an enterprise RAG platform for health insurance SOP workflows, serving 5K+ daily users with hybrid retrieval, Azure ingestion, Azure AD access control, 90% accuracy, and sub-second latency.
+      - Improved response quality 40% over the UAT baseline with DSPy evaluator-optimizer loops, SME feedback, GEPA prompt/program optimization, and Best-of-N sampling for sensitive query types.
+      - Built distributed token caching and rate limiting in FastAPI, Redis, and Lua to coordinate shared OpenAI TPM quotas across parallel workers.
+      - Led enterprise Text2SQL and agentic automation systems with LangChain, LangGraph, Azure AI Search, MCP, SQL Server, Kafka, MongoDB, and human escalation paths.
   - position: Senior AI Engineer
     company_name: Bosch
     date_start: 2021-05-01
@@ -100,6 +103,12 @@ skills:
       - name: PyTorch
         percent: 70
         icon: devicon/pytorch
+      - name: LangGraph / MCP
+        percent: 85
+        icon: network
+      - name: RAG Systems
+        percent: 90
+        icon: magnifying-glass
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'

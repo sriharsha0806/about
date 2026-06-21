@@ -1,0 +1,137 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{needspace}
+
+\definecolor{linkcolor}{HTML}{0B6E99}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\newcommand{\resumesection}[1]{
+    \needspace{4\baselineskip}%
+    \vspace{0.22cm}
+    {\large\textbf{#1}}
+    \vspace{0.06cm}
+    \hrule
+    \vspace{0.08cm}%
+    \nopagebreak
+}
+
+\newcommand{\roleheader}[4]{
+    \needspace{5\baselineskip}%
+    \textbf{#1} \hfill \textit{#4} \\
+    \textit{#2, #3}%
+    \nopagebreak
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\textbf{Sriharsha Annamaneni}} \\[0.35em]
+    \small
+    \href{mailto:sriharsha0806@gmail.com}{\faEnvelope\hspace{1mm} sriharsha0806@gmail.com}
+    \hspace{0.6em} $|$ \hspace{0.6em}
+    \href{tel:+917981787689}{\faPhone\hspace{1mm} (+91) 798 178 7689}
+    \hspace{0.6em} $|$ \hspace{0.6em}
+    \href{https://sriharsha0806.github.io/about}{\faGlobe\hspace{1mm} sriharsha0806.github.io/about}
+\end{center}
+
+\vspace{0.1cm}
+
+Applied AI/ML engineer with 7+ years shipping production AI across healthcare, insurance, automotive, and enterprise platforms. Current Senior Applied AI/ML at JPMC, focused on evaluation alignment and agents for long-horizon tasks. Recent work includes enterprise RAG, LangGraph and MCP agent workflows, Text2SQL systems, model fine-tuning, and production LLM serving infrastructure.
+
+\resumesection{Work Experience}
+
+\roleheader{Senior Applied AI/ML}{JPMC}{Bengaluru}{Jun 17, 2026 -- Present}
+\begin{itemize}[leftmargin=*, itemsep=3pt, topsep=4pt]
+    \item Working on evaluation alignment and long-horizon agent tasks for applied AI/ML systems.
+\end{itemize}
+
+\vspace{0.08cm}
+
+\roleheader{Senior Gen AI Data Scientist}{Fractal}{Bengaluru}{May 2024 -- Jun 15, 2026}
+\begin{itemize}[leftmargin=*, itemsep=3pt, topsep=4pt]
+    \item \textbf{Health Insurance SOP Assistant.} Built and scaled an enterprise RAG platform now used by 5K+ daily users. Hybrid retrieval (vector + keyword + department-scoped metadata) on a tuned HNSW index, an event-driven ingestion pipeline on Azure Functions + Service Bus, and role-based access tied to Azure AD group resolution. Landed at 90\% accuracy with sub-second latency. Supported a program credited with \$11M+ in operational savings.
+    \item Response quality improved 40\% over the initial baseline during UAT. The jump came from implementing the DSPy evaluator--optimizer pattern, wiring SME feedback into a refinement loop, using GEPA for prompt/program optimization, and running Best-of-N sampling for the most sensitive query types.
+    \item Wrote a distributed token caching and rate-limiting service in FastAPI + Redis with Lua scripts for atomicity. This killed the token-refresh thundering herd and made shared OpenAI TPM quotas work cleanly across parallel workers.
+    \item Set up the document normalization layer (grammar cleanup, abbreviation expansion, HTML/PDF parsing), improving chunk quality and retrieval relevance while cutting refresh cycles by roughly 10x.
+    \item \textbf{Text2SQL Chatbot.} Led an enterprise Text2SQL chatbot on LangChain + LangGraph with a multi-agent layout (router, clarity, text2SQL, output). Azure AI Search handled retrieval with guardrails for PII and hallucination. Shipped to AKS behind a Streamlit frontend; SQL generation accuracy improved 27\% vs. the previous prompt-only approach.
+    \item \textbf{Appeals Verification and Enrollment Automation.} Built a ReAct-style reasoning pipeline in LangGraph for appeals decisions, with an MCP server in front of a SQL Server catalog of 100+ normalized tables. Extended the same pattern into an enrollment processing system with five sub-agents handling validation, identity checks, GPT-4o fallout classification, supplier communication drafts, and human escalation; asyncio queues with DLQ support kept the stages isolated.
+    \item \textbf{Email Automation Platform.} Designed an MCP-powered workflow on LangGraph, FastMCP, MongoDB, and Kafka that reconstructs email threads, classifies intent, calls retrieval tools across multiple MCP servers, and drafts grounded replies. Added resolvability classification so the system can cleanly hand off partial or ambiguous cases to a human.
+\end{itemize}
+
+\vspace{0.08cm}
+
+\roleheader{Senior AI Engineer}{Bosch}{Bengaluru}{May 2021 -- Apr 2024}
+
+On the software development lifecycle (SDLC) and software quality team. Built ML tooling that plugged into defect triage, test planning, and in-cabin safety systems used across automotive product lines.
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, topsep=4pt]
+    \item \textbf{Ditto (bug similarity).} Semantic similarity and RAG search over an internal corpus covering years of historical defects from the SDLC pipeline. Sentence-transformer encoder for dense retrieval, Qdrant as the vector store, hybrid dense + BM25 scoring, and cross-encoder reranking on the top candidates. Wired into the internal bug tracker so triage engineers saw matching historical defects and their resolutions at the point of filing. Time-to-resolution dropped roughly 30\% after rollout.
+    \item \textbf{Interior Monitoring.} In-cabin safety models for seat-belt and drowsiness detection. Convolutional backbones for seat-belt classification and a facial-landmark + eye-state pipeline for drowsiness, trained on internal annotated driving-session data. Used GradCam++ to track down systematic failure modes and added evidential deep learning so the model could abstain rather than predict confidently and wrong. Error rate dropped 40\% after those two changes went in.
+    \item \textbf{Bug-to-Test Linkage.} Automated traceability between defect reports and the test cases that should have caught them. Fine-tuned an MPNet sentence encoder on internal bug--test pairs, tuned the similarity threshold against labeled data to balance precision and recall, and plugged the matcher into the test management system. End-to-end throughput went up 75x and effective test coverage reached 95\%.
+\end{itemize}
+
+\vspace{0.08cm}
+
+\roleheader{Computer Vision Engineer}{Aimlytics}{Hyderabad}{Oct 2020 -- Apr 2021}
+\begin{itemize}[leftmargin=*, itemsep=3pt, topsep=4pt]
+    \item Built an automated speech dubbing pipeline that chained ASR, speaker diarization, and TTS for multilingual media workflows.
+    \item \textbf{Indic TTS fine-tuning.} Adapted a two-stage TTS stack on the IIT Madras Indic TTS dataset: a character-level Tacotron-style acoustic model followed by a WaveNet vocoder.
+\end{itemize}
+
+\vspace{0.08cm}
+
+\roleheader{Research Engineer}{Sirena Technologies}{Bengaluru}{Nov 2019 -- Jun 2020}
+\begin{itemize}[leftmargin=*, itemsep=3pt, topsep=4pt]
+    \item Developed an offline wake-word model using GRUs for embedded consumer devices, cutting detection latency by 13\%.
+    \item Trained a Siamese network for face recognition that hit 99.8\% accuracy on the internal eval set.
+\end{itemize}
+
+\resumesection{Core Skills}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=4pt]
+    \item \textbf{GenAI and Agents:} LangChain, LangGraph, DSPy, Semantic Kernel, CrewAI, PydanticAI, MCP, A2A, Ollama
+    \item \textbf{ML / DL:} PyTorch, TensorFlow, Keras, scikit-learn, Hugging Face, OpenCV, Optuna
+    \item \textbf{Training and Serving:} QLoRA, distributed data loading, optimizer-state sharding, activation checkpointing, vLLM, SGLang, TensorRT-LLM
+    \item \textbf{Backend and Data:} FastAPI, Streamlit, Redis, MongoDB, Azure SQL, Cosmos DB, PySpark, Databricks, Snowflake, Azure Data Factory
+    \item \textbf{Cloud and MLOps:} Azure, AWS, Vertex AI, Kubernetes (AKS), Docker, MLflow, DVC, LangSmith, Arize AI, Grafana
+    \item \textbf{Languages:} Python, C++, Go
+\end{itemize}
+
+\resumesection{Research Experience}
+
+\roleheader{Research Fellow}{IIIT Hyderabad}{Hyderabad}{Apr 2017 -- Jun 2019}
+\begin{itemize}[leftmargin=*, itemsep=3pt, topsep=4pt]
+    \item Applied deep learning research under Prof. C.V. Jawahar on road-audit systems and autonomous navigation, with most work focused on semantic segmentation models and efficient field deployment.
+    \item Implemented and optimized PSPNet, ERFNet, MobileNet, and DeepLabV3 in PyTorch; several went into pilot deployments.
+    \item Co-authored \textit{Efficient Semantic Segmentation using Gradual Grouping}, presented at the CVPR Workshop 2018, where it picked up Best Runner-up.
+\end{itemize}
+
+\resumesection{Education}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=4pt]
+    \item \textbf{M.S. in Electrical Engineering,} Florida Institute of Technology \hfill \textit{2016}
+    \item \textbf{B.E. in Electronics and Communication Engineering,} Manipal Institute of Technology \hfill \textit{2014}
+\end{itemize}
+
+\resumesection{Certifications}
+\begin{itemize}[leftmargin=*, itemsep=3pt, topsep=4pt]
+    \item \textit{Scratch to Scale: Large-Scale Training in the Modern World} (Maven, 2025). Cohort course by Zachary Mueller covering distributed data loading, optimizer-state sharding, activation checkpointing, and multi-node training for transformer-scale models. Fine-tuned Mistral 7B on MedInstruct-52k ($\sim$45K filtered samples) with QLoRA across 4xA100s using DDP and activation checkpointing; LLM-as-judge win rate 78\% vs 61\% against base Mistral-7B on 500 held-out medical instructions.
+\end{itemize}
+
+\resumesection{Technical Reviewing}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=4pt]
+    \item Technical reviewer for GenAI/ML books including \textit{AI Agents in Action}, \textit{AI Apps with LangChain}, \textit{Generative AI Applications with AWS}, \textit{Optimization Bootcamp}, and \textit{Context Engineering with DSPy}.
+\end{itemize}
+
+\end{document}
