@@ -7,32 +7,42 @@ summary: Books I have read, books I review, and short notes worth remembering.
 <section class="books-page">
 <div class="books-page__intro">
 <p>This page tracks books I have read, books I am reading, and short notes worth remembering.</p>
-<p>I also review technical books in GenAI and ML. Recent reviewing work includes AI Agents in Action, AI Apps with LangChain, Generative AI Applications with AWS, Optimization Bootcamp, and Context Engineering with DSPy.</p>
+<p>I also review technical books and manuscripts in GenAI and ML. Recent reviewing work includes AI Agents in Action, AI Apps with LangChain, a not-published Generative AI Applications with AWS manuscript, Optimization Bootcamp, and Context Engineering with DSPy.</p>
 </div>
 
-<div class="book-filter" aria-label="Filter books by tag">
-<button class="book-filter__button is-active" data-book-filter="all">All</button>
-<button class="book-filter__button" data-book-filter="reviewed">Reviewed</button>
-<button class="book-filter__button" data-book-filter="ai-ml">AI/ML</button>
-<button class="book-filter__button" data-book-filter="engineering">Engineering</button>
-<button class="book-filter__button" data-book-filter="investing">Investing</button>
-<button class="book-filter__button" data-book-filter="business">Business</button>
-<button class="book-filter__button" data-book-filter="biography">Biography</button>
-<button class="book-filter__button" data-book-filter="thinking">Thinking</button>
-<button class="book-filter__button" data-book-filter="fiction">Fiction</button>
-<button class="book-filter__button" data-book-filter="wisdom">Wisdom</button>
+<div class="book-toolbar">
+<div class="book-search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<input type="search" id="book-search" placeholder="Search by title…" aria-label="Search books by title" autocomplete="off">
+</div>
+<div class="book-filter" role="group" aria-label="Filter books by category">
+<button class="book-filter__button is-active" data-book-filter="all" aria-pressed="true">All</button>
+<button class="book-filter__button" data-book-filter="reviewed" aria-pressed="false">Reviewed</button>
+<button class="book-filter__button" data-book-filter="ai-ml" aria-pressed="false">AI/ML</button>
+<button class="book-filter__button" data-book-filter="engineering" aria-pressed="false">Engineering</button>
+<button class="book-filter__button" data-book-filter="investing" aria-pressed="false">Investing</button>
+<button class="book-filter__button" data-book-filter="business" aria-pressed="false">Business</button>
+<button class="book-filter__button" data-book-filter="biography" aria-pressed="false">Biography</button>
+<button class="book-filter__button" data-book-filter="thinking" aria-pressed="false">Thinking</button>
+<button class="book-filter__button" data-book-filter="fiction" aria-pressed="false">Fiction</button>
+<button class="book-filter__button" data-book-filter="wisdom" aria-pressed="false">Wisdom</button>
+</div>
+<p class="book-count" id="book-count" aria-live="polite"></p>
 </div>
 
+<section class="book-section" data-book-section>
 <h2>Technical Reviewing</h2>
 
 <div class="library-grid">
 <article class="library-card" data-book-tags="reviewed ai-ml engineering"><figure class="library-card__cover cover-image"><img src="../uploads/books/ai-agents-in-action.jpg" alt="Cover of AI Agents in Action" loading="lazy"></figure><div class="library-card__body"><h3>AI Agents in Action</h3><div class="book-tags"><span>Reviewed</span><span>AI/ML</span><span>Engineering</span></div></div></article>
 <article class="library-card" data-book-tags="reviewed ai-ml engineering"><figure class="library-card__cover cover-green"><span>Reviewed</span><strong>AI Apps<br>with LangChain</strong><em>RAG / Apps</em></figure><div class="library-card__body"><h3>AI Apps with LangChain</h3><div class="book-tags"><span>Reviewed</span><span>AI/ML</span><span>Engineering</span></div></div></article>
-<article class="library-card" data-book-tags="reviewed ai-ml business"><figure class="library-card__cover cover-indigo"><span>Reviewed</span><strong>Generative AI<br>Applications<br>with AWS</strong><em>Cloud / GenAI</em></figure><div class="library-card__body"><h3>Generative AI Applications with AWS</h3><div class="book-tags"><span>Reviewed</span><span>AI/ML</span><span>Business</span></div></div></article>
+<article class="library-card" data-book-tags="reviewed ai-ml business"><figure class="library-card__cover cover-indigo"><span>Reviewed</span><strong>Generative AI<br>Applications<br>with AWS</strong><em>AWS / Bedrock</em></figure><div class="library-card__body"><h3>Generative AI Applications with AWS</h3><div class="book-tags"><span>Reviewed draft</span><span>Not published</span><span>AI/ML</span><span>AWS</span><span>Bedrock</span></div></div></article>
 <article class="library-card" data-book-tags="reviewed engineering thinking"><figure class="library-card__cover cover-red"><span>Reviewed</span><strong>Optimization<br>Bootcamp</strong><em>Systems</em></figure><div class="library-card__body"><h3>Optimization Bootcamp</h3><div class="book-tags"><span>Reviewed</span><span>Engineering</span><span>Thinking</span></div></div></article>
 <article class="library-card" data-book-tags="reviewed ai-ml thinking"><figure class="library-card__cover cover-purple"><span>Reviewed</span><strong>Context<br>Engineering<br>with DSPy</strong><em>Evaluation</em></figure><div class="library-card__body"><h3>Context Engineering with DSPy</h3><div class="book-tags"><span>Reviewed</span><span>AI/ML</span><span>Thinking</span></div></div></article>
 </div>
+</section>
 
+<section class="book-section" data-book-section>
 <h2>Read Library</h2>
 
 <div class="library-grid">
@@ -64,6 +74,9 @@ summary: Books I have read, books I review, and short notes worth remembering.
 <article class="library-card" data-book-tags="fiction"><figure class="library-card__cover cover-image"><img src="../uploads/books/inferno.jpg" alt="Cover of Inferno" loading="lazy"></figure><div class="library-card__body"><h3>Inferno</h3><div class="book-tags"><span>Fiction</span></div></div></article>
 <article class="library-card" data-book-tags="fiction"><figure class="library-card__cover cover-image"><img src="../uploads/books/the-lost-symbol.jpg" alt="Cover of The Lost Symbol" loading="lazy"></figure><div class="library-card__body"><h3>The Lost Symbol</h3><div class="book-tags"><span>Fiction</span></div></div></article>
 </div>
+</section>
+
+<p class="book-empty" id="book-empty" hidden>No books match — try a different search or tag. <button type="button" id="book-reset">Clear filters</button></p>
 
 <h2>Reading Notes</h2>
 <div class="reading-notes">
@@ -75,15 +88,62 @@ summary: Books I have read, books I review, and short notes worth remembering.
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = Array.from(document.querySelectorAll('[data-book-filter]'));
   const cards = Array.from(document.querySelectorAll('[data-book-tags]'));
+  const sections = Array.from(document.querySelectorAll('[data-book-section]'));
+  const search = document.getElementById('book-search');
+  const count = document.getElementById('book-count');
+  const empty = document.getElementById('book-empty');
+  const reset = document.getElementById('book-reset');
+  let activeFilter = 'all';
+
+  function apply() {
+    const q = (search.value || '').trim().toLowerCase();
+    let visible = 0;
+    cards.forEach(function (card) {
+      const tags = (card.getAttribute('data-book-tags') || '').split(' ');
+      const title = (card.querySelector('h3') || {}).textContent || '';
+      const matchTag = activeFilter === 'all' || tags.indexOf(activeFilter) !== -1;
+      const matchText = !q || title.toLowerCase().indexOf(q) !== -1;
+      const show = matchTag && matchText;
+      card.hidden = !show;
+      if (show) { visible++; }
+    });
+    // Hide a section heading when none of its cards are visible
+    sections.forEach(function (section) {
+      const anyVisible = Array.from(section.querySelectorAll('[data-book-tags]'))
+        .some(function (card) { return !card.hidden; });
+      section.hidden = !anyVisible;
+    });
+    if (count) { count.textContent = 'Showing ' + visible + ' of ' + cards.length + ' books'; }
+    if (empty) { empty.hidden = visible !== 0; }
+  }
+
   buttons.forEach(function (button) {
     button.addEventListener('click', function () {
-      const filter = button.getAttribute('data-book-filter');
-      buttons.forEach(function (item) { item.classList.toggle('is-active', item === button); });
-      cards.forEach(function (card) {
-        const tags = (card.getAttribute('data-book-tags') || '').split(' ');
-        card.hidden = filter !== 'all' && !tags.includes(filter);
+      activeFilter = button.getAttribute('data-book-filter');
+      buttons.forEach(function (item) {
+        const on = item === button;
+        item.classList.toggle('is-active', on);
+        item.setAttribute('aria-pressed', on ? 'true' : 'false');
       });
+      apply();
     });
   });
+
+  if (search) { search.addEventListener('input', apply); }
+  if (reset) {
+    reset.addEventListener('click', function () {
+      search.value = '';
+      activeFilter = 'all';
+      buttons.forEach(function (item) {
+        const on = item.getAttribute('data-book-filter') === 'all';
+        item.classList.toggle('is-active', on);
+        item.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      apply();
+      search.focus();
+    });
+  }
+
+  apply();
 });
 </script>
