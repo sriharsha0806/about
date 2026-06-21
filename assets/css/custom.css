@@ -3,6 +3,103 @@
   padding: 2.25rem 0 2.75rem !important;
 }
 
+.site-super-tabs {
+  position: fixed;
+  top: 0.85rem;
+  right: 0.85rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: calc(100vw - 1.7rem);
+  padding: 0.3rem;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.14);
+  backdrop-filter: blur(16px);
+}
+
+.dark .site-super-tabs {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(17, 24, 39, 0.82);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.site-super-tabs__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.site-super-tabs__link,
+.site-super-tabs__theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.1rem;
+  border: 0;
+  border-radius: 999px;
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.site-super-tabs__link {
+  padding: 0 0.85rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.site-super-tabs__link:hover,
+.site-super-tabs__link.is-active {
+  background: #111827;
+  color: #ffffff;
+}
+
+.site-super-tabs__theme {
+  width: 2.1rem;
+  background: #eef2f7;
+  cursor: pointer;
+}
+
+.dark .site-super-tabs__link,
+.dark .site-super-tabs__theme {
+  color: #f9fafb;
+}
+
+.dark .site-super-tabs__link:hover,
+.dark .site-super-tabs__link.is-active {
+  background: #ffffff;
+  color: #111827;
+}
+
+.dark .site-super-tabs__theme {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+  .site-super-tabs {
+    left: 0.75rem;
+    right: 0.75rem;
+    justify-content: space-between;
+    border-radius: 18px;
+  }
+
+  .site-super-tabs__nav {
+    flex: 1;
+    justify-content: space-between;
+    min-width: 0;
+  }
+
+  .site-super-tabs__link {
+    flex: 1;
+    padding: 0 0.35rem;
+    font-size: 0.78rem;
+  }
+}
+
 .blox-resume-biography .home-section-bg,
 .blox-resume-biography #profile {
   background: transparent !important;
