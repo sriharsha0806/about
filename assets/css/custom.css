@@ -127,6 +127,7 @@
 .blox-resume-biography #profile .bio-text {
   max-width: 46rem;
   margin-top: 0.75rem;
+  text-align: center !important;
 }
 
 .blox-resume-biography #profile a[href$="resume.pdf"] {
