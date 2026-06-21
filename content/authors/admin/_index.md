@@ -18,7 +18,7 @@ organizations:
 
 profiles:
   - icon: at-symbol
-    url: 'sriharsha0806@gmail.com'
+    url: 'mailto:sriharsha0806@gmail.com'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/harsha0806

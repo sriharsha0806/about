@@ -14,10 +14,6 @@ sections:
   - block: biography
     content:
       username: admin
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download Résumé
-        url: uploads/resume.pdf
     design:
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
@@ -106,8 +102,15 @@ sections:
       text: |
         <section class="research-strip">
           <div>
-            <h2>Research, reading, and reviewing</h2>
-            <p>Before production GenAI systems, I worked on semantic segmentation research at IIIT Hyderabad and co-authored <em>Efficient Semantic Segmentation using Gradual Grouping</em>, presented at the CVPR Workshop 2018.</p>
+            <h2>Research &amp; publications</h2>
+            <p>Before production GenAI systems, I worked on semantic segmentation research at IIIT Hyderabad.</p>
+            <ul class="pub-list">
+              <li>
+                <span class="pub-venue">CVPR Workshops 2018</span>
+                <a class="pub-title" href="https://arxiv.org/abs/1806.08522">Efficient Semantic Segmentation using Gradual Grouping</a>
+                <span class="pub-meta">Vallurupalli, Annamaneni, et al. · IIIT Hyderabad · <a href="https://arxiv.org/abs/1806.08522">arXiv</a> · <a href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Vallurupalli_Efficient_Semantic_Segmentation_CVPR_2018_paper.pdf">PDF</a></span>
+              </li>
+            </ul>
           </div>
           <div>
             <h3>Technical reviewing</h3>
@@ -117,7 +120,7 @@ sections:
             <a href="books/">Books</a>
             <a href="blog/">Blog</a>
             <a href="about-me/">About</a>
-            <a href="uploads/resume.tex">Resume LaTeX</a>
           </div>
+          <p class="resume-source">Prefer the source? Download my résumé in <a href="uploads/resume.tex">LaTeX</a>.</p>
         </section>
 ---
