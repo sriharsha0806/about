@@ -127,6 +127,11 @@
   margin-top: 0.75rem;
 }
 
+.blox-resume-biography #profile a.btn,
+.blox-resume-biography #profile .btn {
+  color: #ffffff !important;
+}
+
 .blox-resume-biography .avatar {
   box-shadow:
     0 12px 30px rgba(15, 23, 42, 0.12),
